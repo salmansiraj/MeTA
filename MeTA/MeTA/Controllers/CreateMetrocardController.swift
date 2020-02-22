@@ -1,20 +1,18 @@
 //
-//  ViewController.swift
+//  CreateMetrocardController.swift
 //  MeTA
 //
-//  Created by salman siraj on 2/20/20.
+//  Created by salman siraj on 2/22/20.
 //  Copyright © 2020 senior design. All rights reserved.
 //
 
+
 import UIKit
 
-class ViewController: UIViewController {
 
+class CreateMetrocardController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
-

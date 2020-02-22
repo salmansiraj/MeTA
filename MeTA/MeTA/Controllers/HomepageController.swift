@@ -13,13 +13,15 @@ class HomepageController: UIViewController {
     
     var trains: [Train] = []
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         trains = createArray()
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
 
     func createArray() -> [Train] {
         
