@@ -12,6 +12,7 @@
 		227314BF23FFA5B9001C6209 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227314BE23FFA5B9001C6209 /* TrainCell.swift */; };
 		227314C123FFA6A3001C6209 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227314C023FFA6A3001C6209 /* Train.swift */; };
 		22BC91BF24039C1F000C5551 /* RefillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC91BE24039C1F000C5551 /* RefillController.swift */; };
+		22BC91C12404330F000C5551 /* MetrocardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC91C02404330F000C5551 /* MetrocardController.swift */; };
 		22EC0A6323FF628900B022A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6223FF628900B022A2 /* AppDelegate.swift */; };
 		22EC0A6523FF628900B022A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6423FF628900B022A2 /* SceneDelegate.swift */; };
 		22EC0A6723FF628900B022A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6623FF628900B022A2 /* LoginController.swift */; };
@@ -27,6 +28,7 @@
 		227314BE23FFA5B9001C6209 /* TrainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCell.swift; sourceTree = "<group>"; };
 		227314C023FFA6A3001C6209 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		22BC91BE24039C1F000C5551 /* RefillController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefillController.swift; sourceTree = "<group>"; };
+		22BC91C02404330F000C5551 /* MetrocardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetrocardController.swift; sourceTree = "<group>"; };
 		22EC0A5F23FF628900B022A2 /* MeTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EC0A6223FF628900B022A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22EC0A6423FF628900B022A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				225E1F3C2401A9730063F1D7 /* CreateMetrocardController.swift */,
 				227314BC23FF6EBF001C6209 /* HomepageController.swift */,
 				22BC91BE24039C1F000C5551 /* RefillController.swift */,
+				22BC91C02404330F000C5551 /* MetrocardController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				227314BD23FF6EBF001C6209 /* HomepageController.swift in Sources */,
 				22EC0A6323FF628900B022A2 /* AppDelegate.swift in Sources */,
 				22EC0A6523FF628900B022A2 /* SceneDelegate.swift in Sources */,
+				22BC91C12404330F000C5551 /* MetrocardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
