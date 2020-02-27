@@ -16,12 +16,17 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var completeButton: UIButton!
-    @IBOutlet weak var directDepositCompleteView: UIView!
-    @IBOutlet var viewBalance1: UIButton!
+    @IBOutlet var directDepositCompleteView: UIView!
+    @IBOutlet var errorView: UIView!
+    
+    @IBOutlet weak var amountAdded: UITextField!
     
     
+//    Popup views + their attributes
+
     @IBOutlet weak var coverBackground: UIImageView!
     @IBOutlet weak var coverBackground2: UIImageView!
+    @IBOutlet weak var tryAgainButton: UIButton!
     
     
     let metroCardTypes = [
@@ -52,12 +57,33 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
                 self.timePaymentCompleteView.alpha = 1
                 self.timePaymentCompleteView.transform = CGAffineTransform.identity
             }
+        } else {
+            self.view.addSubview(errorView)
+            errorView.center = self.view.center
+            errorView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            errorView.alpha = 0
+            
+            UIView.animate(withDuration: 0.4) {
+                self.errorView.alpha = 1
+                self.errorView.transform = CGAffineTransform.identity
+            }
         }
     }
     
     @IBAction func completePressed(_ sender: Any) {
+        let floatValue = NSString(string: amountAdded.text!).floatValue
         
-        animateIn(output: "directDeposit")
+        if (amountAdded.text == "") || (floatValue < 0) {
+            coverBackground.isHidden = true
+            coverBackground2.isHidden = false
+            animateIn(output: "error")
+            
+        } else if (floatValue > 0) {
+            animateIn(output: "directDeposit")
+            
+        } else {
+            animateIn(output: "error")
+        }
     }
     
     // Number of columns of data
@@ -83,7 +109,6 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
         pickerView.setValue(UIColor.white, forKeyPath: "textColor")
     }
     
-    
     @IBAction func continuePressed(_ sender: Any) {
         let selectedValue = metroCardTypes[pickerView.selectedRow(inComponent: 0)]
         
@@ -91,7 +116,22 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             coverBackground.isHidden = true
             coverBackground2.isHidden = false
         } else {
+            coverBackground2.isHidden = false
             animateIn(output: "unlimitedDeposit")
         }
     }
+    
+    @IBAction func tryAgainPressed(_ sender: Any) {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.errorView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.errorView.alpha = 0.0;
+
+        }, completion:{(finished : Bool)  in
+            if (finished)
+            {
+                self.errorView.removeFromSuperview()
+            }
+        });
+    }
+    
 }

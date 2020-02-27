@@ -10,6 +10,9 @@ import UIKit
 
 class HomepageController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var myMetrocardButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var createMetrocardButton: UIButton!
     
     var trains: [Train] = []
     
@@ -21,7 +24,6 @@ class HomepageController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
 
     func createArray() -> [Train] {
         

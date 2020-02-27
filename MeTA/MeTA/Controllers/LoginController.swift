@@ -10,8 +10,12 @@ import UIKit
 
 class LoginController: UIViewController {
 
+    @IBOutlet weak var myPassword: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        myPassword.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
 
