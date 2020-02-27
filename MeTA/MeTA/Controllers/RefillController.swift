@@ -39,6 +39,19 @@ class RefillController: UIViewController {
         animateIn()
     }
     
+    @IBAction func tryAgainPressed(_ sender: Any) {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.completeView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.completeView.alpha = 0.0;
+
+        }, completion:{(finished : Bool)  in
+            if (finished)
+            {
+                self.completeView.removeFromSuperview()
+            }
+        });
+    }
+    
     
     
 }
