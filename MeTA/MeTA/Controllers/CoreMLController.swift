@@ -48,7 +48,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             guard let result = request.results as? [VNClassificationObservation] else {
                 fatalError("Model failed to process image.")
             }
-//            print(result)
+            print(result)
             if let firstResult = result.first {
                 if firstResult.identifier.contains("OMNY") {
                     self.navigationItem.title = "OMNY"
