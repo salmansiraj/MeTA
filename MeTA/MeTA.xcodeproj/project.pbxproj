@@ -174,8 +174,8 @@
 				22EC0A5B23FF628900B022A2 /* Sources */,
 				22EC0A5C23FF628900B022A2 /* Frameworks */,
 				22EC0A5D23FF628900B022A2 /* Resources */,
-				EDADAD5FB258E6CF80648EBF /* [CP] Embed Pods Frameworks */,
 				F331B92A976D07872494228D /* [CP] Copy Pods Resources */,
+				BBA954697B1FB4CBF30B8A38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,7 +255,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDADAD5FB258E6CF80648EBF /* [CP] Embed Pods Frameworks */ = {
+		BBA954697B1FB4CBF30B8A38 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,13 +460,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 385YYU2P47;
+				DEVELOPMENT_TEAM = MS47QS8DHD;
 				INFOPLIST_FILE = MeTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seniordesign.MeTA;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeTA-SeniorDesign.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,13 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 385YYU2P47;
+				DEVELOPMENT_TEAM = MS47QS8DHD;
 				INFOPLIST_FILE = MeTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seniordesign.MeTA;
+				PRODUCT_BUNDLE_IDENTIFIER = "MeTA-SeniorDesign.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

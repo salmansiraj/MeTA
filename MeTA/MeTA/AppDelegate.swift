@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import GoogleMaps
 
-let googleApiKey = "ENTER_STRING_HERE"
+let googleApiKey = "AIzaSyA1NX8B8dQAI4nngE6q68HTcvynWGs92Ks"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

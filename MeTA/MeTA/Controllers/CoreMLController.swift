@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CoreMLController.swift
 //  SeeFood
 //
 //  Created by Brittany Ng on 2/24/20.
@@ -10,9 +10,13 @@ import UIKit
 import CoreML
 import Vision
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CoreMLController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+//    @IBOutlet weak var ImageView: UIImageView!
+    
     @IBOutlet weak var ImageView: UIImageView!
+    
+    @IBOutlet weak var cameraButton: UIButton!
     
     let imagePicker = UIImagePickerController()
     
@@ -67,10 +71,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
 
-    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+    @IBAction func cameraTapped(_ sender: Any) {
         present(imagePicker, animated: true, completion: nil)
-        
     }
+    //    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+//        present(imagePicker, animated: true, completion: nil)
+//
+//    }
     
 }
 
