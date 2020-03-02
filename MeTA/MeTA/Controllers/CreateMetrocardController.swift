@@ -130,6 +130,8 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             if (finished)
             {
                 self.errorView.removeFromSuperview()
+                self.coverBackground.isHidden = false
+                self.coverBackground2.isHidden = true
             }
         });
     }
