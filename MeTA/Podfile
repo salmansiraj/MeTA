@@ -1,3 +1,4 @@
+# Uncomment the next line to define a global platform for your project
  platform :ios, '13.0'
 
 target 'MeTA' do
@@ -8,6 +9,5 @@ target 'MeTA' do
 	pod 'GoogleMaps'
 	pod 'SwiftyJSON'
   pod 'GooglePlaces'
-  pod 'RealmSwift'
 
 end

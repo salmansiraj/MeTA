@@ -9,29 +9,18 @@
 import UIKit
 import CoreData
 import GoogleMaps
-import RealmSwift
 
 let googleApiKey = "AIzaSyDz9EyKVvKqfKlGbXZxCsMfxxrQUhIfrfQ"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey(googleApiKey)
-        
-//        do {
-//            let realm = try Realm()
-//            try realm.write {
-////                realm.add(data)
-//            }
-//        } catch {
-//            print("Error initialising new realm, \(error)")
-//        }
-//        let currUser = User()
-        
         return true
     }
 

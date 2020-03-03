@@ -17,6 +17,7 @@
 		22EC0A6523FF628900B022A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6423FF628900B022A2 /* SceneDelegate.swift */; };
 		22EC0A6723FF628900B022A2 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6623FF628900B022A2 /* LoginController.swift */; };
 		22EC0A6A23FF628900B022A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EC0A6823FF628900B022A2 /* Main.storyboard */; };
+		22EC0A6D23FF628900B022A2 /* MeTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22EC0A6B23FF628900B022A2 /* MeTA.xcdatamodeld */; };
 		22EC0A6F23FF628A00B022A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EC0A6E23FF628A00B022A2 /* Assets.xcassets */; };
 		22EC0A7223FF628A00B022A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EC0A7023FF628A00B022A2 /* LaunchScreen.storyboard */; };
 		3711C849780D2729EFF09E8E /* Pods_MeTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAD75FEE6B97947F0D34D8E /* Pods_MeTA.framework */; };
@@ -64,6 +65,7 @@
 		22EC0A6423FF628900B022A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22EC0A6623FF628900B022A2 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		22EC0A6923FF628900B022A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22EC0A6C23FF628900B022A2 /* MeTA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeTA.xcdatamodel; sourceTree = "<group>"; };
 		22EC0A6E23FF628A00B022A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22EC0A7123FF628A00B022A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22EC0A7323FF628A00B022A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				22EC0A6E23FF628A00B022A2 /* Assets.xcassets */,
 				22EC0A7023FF628A00B022A2 /* LaunchScreen.storyboard */,
 				22EC0A7323FF628A00B022A2 /* Info.plist */,
+				22EC0A6B23FF628900B022A2 /* MeTA.xcdatamodeld */,
 			);
 			path = MeTA;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EC0A6D23FF628900B022A2 /* MeTA.xcdatamodeld in Sources */,
 				22BC91BF24039C1F000C5551 /* RefillController.swift in Sources */,
 				22EC0A6723FF628900B022A2 /* LoginController.swift in Sources */,
 				D67D8E03240B23E3002EB53E /* MarkerInfoView.swift in Sources */,
@@ -508,19 +512,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-
-				DEVELOPMENT_TEAM = MS47QS8DHD;
 				DEVELOPMENT_TEAM = 7G2MG44HLD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/swift-11.3",
-				)
+				);
 				INFOPLIST_FILE = MeTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MeTA-SeniorDesign.com";
+				PRODUCT_BUNDLE_IDENTIFIER = MeTASeniorDesign.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,21 +535,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-
-				DEVELOPMENT_TEAM = MS47QS8DHD;
-
 				DEVELOPMENT_TEAM = 7G2MG44HLD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/swift-11.3",
 				);
-
 				INFOPLIST_FILE = MeTA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MeTA-SeniorDesign.com";
+				PRODUCT_BUNDLE_IDENTIFIER = MeTASeniorDesign.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,6 +574,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22EC0A6B23FF628900B022A2 /* MeTA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22EC0A6C23FF628900B022A2 /* MeTA.xcdatamodel */,
+			);
+			currentVersion = 22EC0A6C23FF628900B022A2 /* MeTA.xcdatamodel */;
+			path = MeTA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 22EC0A5723FF628900B022A2 /* Project object */;
 }
