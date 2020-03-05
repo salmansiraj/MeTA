@@ -7,18 +7,37 @@
 //
 
 import UIKit
+import RealmSwift
 
 class LoginController: UIViewController {
-
-    @IBOutlet weak var myPassword: UITextField!
     
+    
+    @IBOutlet weak var myPassword: UITextField!
+    @IBOutlet weak var myEmail: UITextField!
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        myPassword.isSecureTextEntry = true
-        // Do any additional setup after loading the view.
+        myPassword.isSecureTextEntry = true
     }
+    
+    
+    @IBAction func checkUser(_ sender: Any) {
+        let userBase = realm.objects(User.self)
+        for user in userBase {
+            if (user.email != myEmail.text) && (user.password != myPassword.text) {
+                let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+
+                alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+                self.present(alert, animated: true)
+            } else {
+                performSegue(withIdentifier: "showDetail1", sender: nil)
+            }
+        }
+    }
+    
 
 
 }
-
