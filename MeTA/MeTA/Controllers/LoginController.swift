@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class LoginController: UIViewController {
 
@@ -16,9 +15,6 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let realm = try! Realm()
-        print(Realm.Configuration.defaultConfiguration.fileURL)
 //        myPassword.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
