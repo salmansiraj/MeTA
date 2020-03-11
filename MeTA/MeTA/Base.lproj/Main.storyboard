@@ -36,7 +36,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="HZS-dd-Ohf">
                                                 <rect key="frame" x="16" y="97.333333333333343" width="372" height="123"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TsV-id-LbH">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TsV-id-LbH">
                                                         <rect key="frame" x="0.0" y="0.0" width="372" height="50"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -95,10 +95,10 @@
                                                         <rect key="frame" x="201.66666666666669" y="0.0" width="60" height="36"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                         <state key="normal" title="Sign up">
-                                                            <color key="titleColor" red="0.52099514007568359" green="0.91008859872817993" blue="0.90633934736251831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.10908732560000001" green="0.79187542200000005" blue="0.80000144240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="vyH-eE-JC3" kind="show" id="oEK-hA-fpz"/>
+                                                            <segue destination="vyH-eE-JC3" kind="presentation" destinationCreationSelector="v1" id="yOR-io-kIt"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -119,8 +119,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="OYp-Gw-bZa"/>
                     <connections>
-                        <outlet property="myEmail" destination="TsV-id-LbH" id="cnF-Ju-hE4"/>
                         <outlet property="myPassword" destination="0xX-Gr-QYo" id="w3K-le-10w"/>
+                        <outlet property="myUsername" destination="TsV-id-LbH" id="ssU-c6-7oh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -341,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KFx-H1-zmH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2715.9420289855075" y="871.46739130434787"/>
+            <point key="canvasLocation" x="3623.188405797102" y="871.46739130434787"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="VdS-6I-e7h">
@@ -387,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMp-C7-ieK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3869.5652173913045" y="871.875"/>
+            <point key="canvasLocation" x="4776.811594202899" y="871.46739130434787"/>
         </scene>
         <!--Create Metrocard Controller-->
         <scene sceneID="bbh-re-I8n">
@@ -613,12 +613,15 @@
                     <rect key="frame" x="0.0" y="0.0" width="333" height="176"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqT-Hw-jVX">
-                            <rect key="frame" x="140" y="65" width="34" height="30"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Metrocard Created!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN3-DV-lRq">
+                            <rect key="frame" x="0.0" y="28" width="333" height="25"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqT-Hw-jVX">
+                            <rect key="frame" x="131" y="73" width="70" height="30"/>
                             <color key="backgroundColor" red="0.49847161769999998" green="0.88655322790000002" blue="0.84705168009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="84" id="bP9-YF-q5P"/>
-                            </constraints>
                             <state key="normal" title="Back">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -627,28 +630,20 @@
                                 <segue destination="ohb-zz-wSY" kind="show" id="5rX-1p-qge"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlimited Metrocard Created!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN3-DV-lRq">
-                            <rect key="frame" x="0.0" y="27.666666666666671" width="314" height="25"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="0.76127860915492962" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="cN3-DV-lRq" firstAttribute="centerX" secondItem="ftx-ta-JyT" secondAttribute="centerX" id="EfC-Vc-lAo"/>
                         <constraint firstItem="cN3-DV-lRq" firstAttribute="trailing" secondItem="g4t-z4-6ev" secondAttribute="trailing" id="J0H-VV-ksd"/>
-                        <constraint firstItem="dqT-Hw-jVX" firstAttribute="top" secondItem="cN3-DV-lRq" secondAttribute="bottom" constant="12.33" id="VGl-yX-AgL"/>
+                        <constraint firstItem="dqT-Hw-jVX" firstAttribute="top" secondItem="cN3-DV-lRq" secondAttribute="bottom" constant="20" id="Z6n-UP-eN1"/>
                         <constraint firstItem="cN3-DV-lRq" firstAttribute="leading" secondItem="g4t-z4-6ev" secondAttribute="leading" id="ZVQ-Aa-aO9"/>
-                        <constraint firstItem="dqT-Hw-jVX" firstAttribute="leading" secondItem="g4t-z4-6ev" secondAttribute="leading" constant="140" id="bPP-4s-H7C"/>
                         <constraint firstItem="dqT-Hw-jVX" firstAttribute="centerX" secondItem="ftx-ta-JyT" secondAttribute="centerX" id="f8R-vV-Dx1"/>
-                        <constraint firstItem="g4t-z4-6ev" firstAttribute="trailing" secondItem="dqT-Hw-jVX" secondAttribute="trailing" constant="140" id="kn7-cg-MfG"/>
-                        <constraint firstItem="g4t-z4-6ev" firstAttribute="bottom" secondItem="dqT-Hw-jVX" secondAttribute="bottom" constant="81" id="law-G2-l3j"/>
+                        <constraint firstItem="g4t-z4-6ev" firstAttribute="bottom" secondItem="dqT-Hw-jVX" secondAttribute="bottom" constant="73" id="lqj-4H-tEa"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="g4t-z4-6ev"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="5853.6231884057979" y="576.35869565217399"/>
+            <point key="canvasLocation" x="6760.8695652173919" y="576.35869565217399"/>
         </scene>
         <!--View MetroCard-->
         <scene sceneID="fIM-fd-W5S">
@@ -1037,7 +1032,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="createUser:" destination="vyH-eE-JC3" eventType="touchUpInside" id="aIQ-p9-npH"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="hhc-vS-urY"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="hhc-vS-urY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1067,7 +1062,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhC-dU-1Mm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-952.17391304347836" y="1026.358695652174"/>
+            <point key="canvasLocation" x="-755" y="871"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aVJ-Zs-VDH">

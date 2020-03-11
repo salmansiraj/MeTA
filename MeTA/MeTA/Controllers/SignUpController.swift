@@ -25,7 +25,7 @@ class SignUpController: UIViewController {
     
     @IBAction func createUser(_ sender: Any) {
         let newUser = User()
-        newUser.username = firstName.text! + "testing"
+        newUser.username = firstName.text!
         newUser.firstName = firstName.text!
         newUser.lastName = lastName.text!
         newUser.email = email.text!
