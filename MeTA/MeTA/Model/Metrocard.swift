@@ -10,12 +10,12 @@ import Foundation
 import RealmSwift
 
 class Metrocard: Object{
-    @objc dynamic var username: User?
+    @objc dynamic var username = ""
     @objc dynamic var cardID = 0
-    @objc dynamic var balance = 0
-    @objc dynamic var expirationDate = Date()
+    @objc dynamic var balance = 0.0
+    @objc dynamic var expirationDate: Date?
     @objc dynamic var cardType = ""
-    @objc dynamic var reloadTime = Date()
+    @objc dynamic var reloadTime = 15
     
     override static func primaryKey() -> String? {
         return "cardID"

@@ -8,9 +8,10 @@
 
 
 import UIKit
-
+import RealmSwift
 
 class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    var currUser = UserDefaults.standard.string(forKey: "currUser")
     
     @IBOutlet var timePaymentCompleteView: UIView!
     @IBOutlet weak var pickerView: UIPickerView!
@@ -23,6 +24,7 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
     
     
 //    Popup views + their attributes
+    let realm = try! Realm()
 
     @IBOutlet weak var coverBackground: UIImageView!
     @IBOutlet weak var coverBackground2: UIImageView!
@@ -70,19 +72,65 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
         }
     }
     
+    
+    func checkCard(currUser : String) -> Bool {
+        let cardDB = realm.objects(Metrocard.self).filter("username = %@", currUser)
+        if (cardDB.count == 0) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func createMetroCard(currUser : String, cardType : String, amtToAdd : String) -> Bool {
+        if (checkCard(currUser: currUser)) {
+            let newCard = Metrocard()
+            newCard.cardID = realm.objects(Metrocard.self).count + 1
+            newCard.username = currUser
+            if (amtToAdd == "inf") {
+                newCard.balance = Double.greatestFiniteMagnitude
+            }
+            else {  newCard.balance += Double(amtToAdd)! }
+            let today = Date()
+            switch cardType {
+                case "Weekly Card":
+                    let expirDate = Calendar.current.date(byAdding: .day, value: 7, to: today)
+                    newCard.expirationDate = expirDate!
+                case "Monthly Card":
+                    let expirDate = Calendar.current.date(byAdding: .month, value: 1, to: today)
+                    newCard.expirationDate = expirDate!
+                default:
+                    newCard.expirationDate = today
+            }
+            newCard.cardType = cardType
+            do {
+                try realm.write() { realm.add(newCard)  }
+            } catch { print("Error initialising new realm, \(error)") }
+            return true
+        } else {
+            return false
+        }
+    }
+    
     @IBAction func completePressed(_ sender: Any) {
         let floatValue = NSString(string: amountAdded.text!).floatValue
         
         if (amountAdded.text == "") || (floatValue < 0) {
             coverBackground.isHidden = true
             coverBackground2.isHidden = false
-            animateIn(output: "error")
+            animateIn(output: "Error: Insufficient amount")
             
         } else if (floatValue > 0) {
-            animateIn(output: "directDeposit")
+            if (createMetroCard(currUser: currUser!, cardType: "Direct Deposit", amtToAdd: amountAdded.text!)) {
+                animateIn(output: "directDeposit")
+            } else {
+                let alert = UIAlertController(title: "Error?", message: "User metrocard exists already", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            }
             
         } else {
-            animateIn(output: "error")
+            animateIn(output: "Error")
         }
     }
     
@@ -115,9 +163,23 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
         if selectedValue == "Direct Deposit" {
             coverBackground.isHidden = true
             coverBackground2.isHidden = false
+            
+        } else if (selectedValue == "Monthly Card") {
+            if (createMetroCard(currUser: currUser!, cardType: "Monthly Card", amtToAdd: "inf")) {
+                    animateIn(output: "unlimitedDeposit")
+            } else {
+                let alert = UIAlertController(title: "Error?", message: "User metrocard exists already", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            }
         } else {
-            coverBackground2.isHidden = false
-            animateIn(output: "unlimitedDeposit")
+            if (createMetroCard(currUser: currUser!, cardType: "Weekly Card", amtToAdd: "inf")) {
+                    animateIn(output: "unlimitedDeposit")
+            } else {
+                let alert = UIAlertController(title: "Error?", message: "User metrocard exists already", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            }
         }
     }
     
