@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(Realm.Configuration.defaultConfiguration.fileURL)
         return true
     }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 

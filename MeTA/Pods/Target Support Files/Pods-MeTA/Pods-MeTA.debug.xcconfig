@@ -1,13 +1,14 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Realm" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON" "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks" "${PODS_ROOT}/GooglePlaces/Frameworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GoogleMaps/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Maps/Frameworks" "${PODS_ROOT}/GooglePlaces/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Realm/Realm.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers"
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Realm/core"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "Accelerate" -framework "CoreData" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreLocation" -framework "CoreTelephony" -framework "CoreText" -framework "GLKit" -framework "GoogleMaps" -framework "GoogleMapsBase" -framework "GoogleMapsCore" -framework "GooglePlaces" -framework "ImageIO" -framework "Metal" -framework "OpenGLES" -framework "QuartzCore" -framework "Realm" -framework "RealmSwift" -framework "Security" -framework "SwiftyJSON" -framework "SystemConfiguration" -framework "UIKit"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Realm"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Realm" "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON" "${PODS_ROOT}/Realm/core"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.modulemap" -fmodule-map-file="${PODS_ROOT}/Headers/Private/Realm/Realm.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Realm" -l"RealmSwift" -l"SwiftyJSON" -l"c++" -l"realmcore-ios" -l"z" -framework "Accelerate" -framework "CoreData" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreLocation" -framework "CoreTelephony" -framework "CoreText" -framework "GLKit" -framework "GoogleMaps" -framework "GoogleMapsBase" -framework "GoogleMapsCore" -framework "GooglePlaces" -framework "ImageIO" -framework "Metal" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.modulemap" -Xcc -fmodule-map-file="${PODS_ROOT}/Headers/Private/Realm/Realm.modulemap"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON"
 USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

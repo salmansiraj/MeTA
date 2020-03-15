@@ -8,21 +8,24 @@
 
 import UIKit
 
-class HomepageController: UIViewController {
+class HomepageController: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var myMetrocardButton: UIButton!
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var createMetrocardButton: UIButton!
+    @IBOutlet weak var helloIntro: UILabel!
     
     var trains: [Train] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftItemsSupplementBackButton = true
         trains = createArray()
         
         tableView.delegate = self
         tableView.dataSource = self
+        helloIntro.text = "Hello " + UserDefaults.standard.string(forKey: "currUser")! + "!"
     }
 
     func createArray() -> [Train] {

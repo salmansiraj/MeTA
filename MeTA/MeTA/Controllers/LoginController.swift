@@ -9,23 +9,26 @@
 import UIKit
 import RealmSwift
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var myPassword: UITextField!
-    @IBOutlet weak var myUsername: UITextField!
+    @IBOutlet weak var myEmail: UITextField!
     
     let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         myPassword.isSecureTextEntry = true
+        myPassword.delegate = self
+        myEmail.delegate = self
+        
     }
     
-    
+
     @IBAction func checkUser(_ sender: Any) {
         let userBase = realm.objects(User.self)
         for user in userBase {
-            if (user.username == myUsername.text) && (user.password == myPassword.text) {
+            if (user.email == myEmail.text) && (user.password == myPassword.text) {
                 UserDefaults.standard.set(user.username, forKey: "currUser")
                 performSegue(withIdentifier: "showDetail1", sender: nil)
             }
@@ -34,5 +37,16 @@ class LoginController: UIViewController {
         alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
-
+    
+    @IBAction func signupButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "signupSegue", sender: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        myEmail.resignFirstResponder()
+        myPassword.resignFirstResponder()
+        return true
+    }
+    
 }
+

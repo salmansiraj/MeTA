@@ -10,7 +10,7 @@
 import UIKit
 import RealmSwift
 
-class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     var currUser = UserDefaults.standard.string(forKey: "currUser")
     
     @IBOutlet var timePaymentCompleteView: UIView!
@@ -155,6 +155,7 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
         self.pickerView.dataSource = self
         self.pickerView.delegate = self
         pickerView.setValue(UIColor.white, forKeyPath: "textColor")
+        amountAdded.delegate = self
     }
     
     @IBAction func continuePressed(_ sender: Any) {
@@ -196,6 +197,11 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
                 self.coverBackground2.isHidden = true
             }
         });
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        amountAdded.delegate = self
+        return true
     }
     
 }

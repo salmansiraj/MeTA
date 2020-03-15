@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RefillController: UIViewController {
     
@@ -14,6 +15,9 @@ class RefillController: UIViewController {
     @IBOutlet weak var completeButton: UIButton!
     @IBOutlet weak var depositLabel: UILabel!
     @IBOutlet weak var depositText: UITextField!
+    
+    var currUser = UserDefaults.standard.string(forKey: "currUser")
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,20 +40,16 @@ class RefillController: UIViewController {
     }
     
     @IBAction func completePressed(_ sender: Any) {
-        animateIn()
-    }
-    
-    @IBAction func tryAgainPressed(_ sender: Any) {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.completeView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-            self.completeView.alpha = 0.0;
-
-        }, completion:{(finished : Bool)  in
-            if (finished)
-            {
-                self.completeView.removeFromSuperview()
-            }
-        });
+        let floatValue = NSString(string: depositText.text!).floatValue
+        
+        if (depositText.text == "") || (floatValue < 0) {
+            animateIn()
+            
+        } else {
+            let alert = UIAlertController(title: "Error?", message: "Insufficient amount added. Please try again...", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
     
