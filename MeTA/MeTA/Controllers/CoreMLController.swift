@@ -66,8 +66,6 @@ class CoreMLController: UIViewController, UIImagePickerControllerDelegate, UINav
         
         do {
             try! handler.perform([request])
-        } catch {
-            print(error)
         }
     }
 

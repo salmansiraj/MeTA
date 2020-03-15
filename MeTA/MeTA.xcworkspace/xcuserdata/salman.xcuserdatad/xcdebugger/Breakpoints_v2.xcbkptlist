@@ -20,5 +20,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EBAFFB7-B082-4E1B-BA31-5926655F5C6A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MeTA/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4EBAFFB7-B082-4E1B-BA31-5926655F5C6A - 8b3768d040d32b8b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeTA.AppDelegate.__allocating_init() -&gt; MeTA.AppDelegate"
+                  moduleName = "MeTA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salman/Desktop/Github%20Repos/MeTA/MeTA/MeTA/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "4EBAFFB7-B082-4E1B-BA31-5926655F5C6A - 19ea8d8aa6c01553"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeTA.AppDelegate.init() -&gt; MeTA.AppDelegate"
+                  moduleName = "MeTA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salman/Desktop/Github%20Repos/MeTA/MeTA/MeTA/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "4EBAFFB7-B082-4E1B-BA31-5926655F5C6A - f55e2ada048a613e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MeTA.AppDelegate.__deallocating_deinit"
+                  moduleName = "MeTA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salman/Desktop/Github%20Repos/MeTA/MeTA/MeTA/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "4EBAFFB7-B082-4E1B-BA31-5926655F5C6A - 4a7a1ad18708fd01"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "MeTA"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salman/Desktop/Github%20Repos/MeTA/MeTA/MeTA/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class SignUpController: UIViewController {
+class SignUpController: UIViewController, UITextFieldDelegate {
     let realm = try! Realm()
     var userBase = [User]()
     
@@ -20,6 +20,10 @@ class SignUpController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstName.delegate = self
+        lastName.delegate = self
+        email.delegate = self
+        password.delegate = self
     }
     
     
@@ -44,5 +48,15 @@ class SignUpController: UIViewController {
             print("Error initialising new realm, \(error)")
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        firstName.resignFirstResponder()
+        lastName.resignFirstResponder()
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+        return true
+    }
+    
+    
     
 }
