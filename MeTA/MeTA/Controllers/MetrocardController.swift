@@ -45,7 +45,7 @@ class MetrocardController: UIViewController {
                 currBalance.text = "Unlimited"
             }
             else {
-                currBalance.text = "$ " + String(cardDB[0].balance)
+                currBalance.text = "$ " + String(format: "%.2f", cardDB[0].balance)
             }
             cardType.text = cardDB[0].cardType
             let formatter1 = DateFormatter()
