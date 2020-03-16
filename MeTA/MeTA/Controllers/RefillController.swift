@@ -40,11 +40,14 @@ class RefillController: UIViewController {
     }
     
     @IBAction func completePressed(_ sender: Any) {
-        let floatValue = NSString(string: depositText.text!).floatValue
-        
-        if (depositText.text == "") || (floatValue < 0) {
+        let doubleValue = NSString(string: depositText.text!).doubleValue
+        let cardDB = realm.objects(Metrocard.self).filter("username = %@", currUser!)
+
+        if (depositText.text != "") || (doubleValue > 0.0) {
+            try! realm.write {
+                cardDB[0].balance += doubleValue
+            }
             animateIn()
-            
         } else {
             let alert = UIAlertController(title: "Error?", message: "Insufficient amount added. Please try again...", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
