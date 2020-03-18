@@ -303,7 +303,7 @@
         <scene sceneID="i2j-p5-G49">
             <objects>
                 <viewController storyboardIdentifier="PhotoVC" id="EwM-fE-Hl3" customClass="CoreMLController" customModule="MeTA" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="thf-eZ-xfu">
+                    <view key="view" contentMode="scaleToFill" id="thf-eZ-xfu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -417,7 +417,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ten-7L-E7a">
-                                <rect key="frame" x="-753" y="0.0" width="1920" height="1513"/>
+                                <rect key="frame" x="-753" y="0.0" width="1920" height="706"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5d9-QD-vLw">
                                 <rect key="frame" x="100" y="304" width="214" height="158.33333333333337"/>
@@ -483,14 +483,14 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="W3s-6r-AAr" userLabel="CoverBG1">
-                                <rect key="frame" x="0.0" y="279" width="414" height="1080"/>
+                                <rect key="frame" x="0.0" y="279" width="414" height="273"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="50L-NQ-x7U"/>
                                     <constraint firstAttribute="height" constant="241" id="jfZ-uY-FEE"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJw-z4-zNn">
-                                <rect key="frame" x="124" y="1385" width="167" height="36"/>
+                                <rect key="frame" x="124" y="578" width="167" height="36"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -507,7 +507,7 @@
                                 </connections>
                             </button>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YeO-eL-fyl" userLabel="CoverBG2">
-                                <rect key="frame" x="0.0" y="1367" width="414" height="132"/>
+                                <rect key="frame" x="0.0" y="560" width="414" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="EP9-5P-qxE"/>
                                     <constraint firstAttribute="height" constant="132" id="l2B-qV-yyF"/>
@@ -804,7 +804,7 @@
             <objects>
                 <viewController id="J4x-Sv-4mk" customClass="RefillController" customModule="MeTA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zga-lh-Pdd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transaction" translatesAutoresizingMaskIntoConstraints="NO" id="UjC-3u-Y4w">
@@ -1113,7 +1113,6 @@
         <image name="transaction" width="968" height="943"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BBa-oN-JwG"/>
         <segue reference="IUh-6H-Pjq"/>
         <segue reference="z7P-v7-rsY"/>
     </inferredMetricsTieBreakers>
