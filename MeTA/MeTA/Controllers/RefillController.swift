@@ -24,7 +24,6 @@ class RefillController: UIViewController {
         completeView.layer.cornerRadius = 5
     }
     
-    
     func animateIn() {
         depositLabel.isHidden = true
         depositText.isHidden = true
