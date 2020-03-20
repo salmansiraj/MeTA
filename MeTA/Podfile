@@ -9,5 +9,6 @@ target 'MeTA' do
   pod 'GooglePlaces'
   pod 'SwiftyJSON'
   pod 'RealmSwift'
+  pod 'SquareInAppPaymentsSDK', '1.2.0'
 
 end
