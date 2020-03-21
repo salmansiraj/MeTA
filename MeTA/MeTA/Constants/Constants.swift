@@ -14,25 +14,18 @@
 //  limitations under the License.
 //
 
-import UIKit
+import Foundation
 
-class HairlineView : UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
+struct Constants {
+    struct ApplePay {
+        static let MERCHANT_IDENTIFIER: String = "REPLACE_ME"
+        static let COUNTRY_CODE: String = "US"
+        static let CURRENCY_CODE: String = "USD"
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commonInit()
-    }
-
-    private func commonInit() {
-        backgroundColor = Color.hairlineColor
-    }
-
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: UIView.noIntrinsicMetric, height: 1)
+    struct Square {
+        static let APPLICATION_ID: String  = "sandbox-sq0idb-qNAnpcshvnq3jzQd9l1BBA"
+        static let CHARGE_SERVER_HOST: String = "REPLACE_ME"
+        static let CHARGE_URL: String = "\(CHARGE_SERVER_HOST)/chargeForCookie"
     }
 }
-

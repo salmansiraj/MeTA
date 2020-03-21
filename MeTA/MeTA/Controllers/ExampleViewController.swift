@@ -27,7 +27,7 @@ class ExampleViewController: UIViewController {
     fileprivate var applePayResult: Result<String> = Result.canceled
 
     override func loadView() {
-        let cookieView = PaymentView()
+        let cookieView = ExampleView()
         self.view = cookieView
 
         cookieView.buyButton.addTarget(self, action: #selector(didTapBuyButton), for: .touchUpInside)
