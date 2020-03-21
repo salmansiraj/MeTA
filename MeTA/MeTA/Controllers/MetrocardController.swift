@@ -43,14 +43,16 @@ class MetrocardController: UIViewController {
         } else {
             if (cardDB[0].balance == Double.greatestFiniteMagnitude) {
                 currBalance.text = "Unlimited"
+                cardType.text = cardDB[0].cardType
+                let formatter1 = DateFormatter()
+                formatter1.dateStyle = .short
+                expirDate!.text = formatter1.string(from: cardDB[0].expirationDate ?? Date())
             }
             else {
                 currBalance.text = "$ " + String(format: "%.2f", cardDB[0].balance)
+                expirDate!.text = "N/A"
+                
             }
-            cardType.text = cardDB[0].cardType
-            let formatter1 = DateFormatter()
-            formatter1.dateStyle = .short
-            expirDate!.text = formatter1.string(from: cardDB[0].expirationDate ?? Date())
         }
         // Do any additional setup after loading the view.
     }

@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2208916C2426C07900C359F3 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208916B2426C07900C359F3 /* ExampleViewController.swift */; };
+		2208916E2426C1EA00C359F3 /* extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208916D2426C1EA00C359F3 /* extension-UIView.swift */; };
+		220891702426C29100C359F3 /* ChargeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208916F2426C29100C359F3 /* ChargeApi.swift */; };
+		220891722426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891712426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift */; };
+		220891742426C2F100C359F3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891732426C2F100C359F3 /* Color.swift */; };
+		220891762426C2FC00C359F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891752426C2FC00C359F3 /* Constants.swift */; };
+		220891782426C30C00C359F3 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891772426C30C00C359F3 /* Style.swift */; };
+		2208917A2426C37F00C359F3 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891792426C37F00C359F3 /* ExampleView.swift */; };
+		2208917C2426C45300C359F3 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208917B2426C45200C359F3 /* HairlineView.swift */; };
+		2208917E2426C49300C359F3 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208917D2426C49300C359F3 /* OrderView.swift */; };
 		224060C42424177E00FB4AA4 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060C32424177E00FB4AA4 /* ActionButton.swift */; };
-		224060D4242418D100FB4AA4 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060D3242418D100FB4AA4 /* HairlineView.swift */; };
 		224060D6242418DD00FB4AA4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060D5242418DC00FB4AA4 /* HeaderView.swift */; };
 		224060D8242418E200FB4AA4 /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060D7242418E200FB4AA4 /* TableRowView.swift */; };
-		224060DB2424190500FB4AA4 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060D92424190500FB4AA4 /* OrderView.swift */; };
-		224060DC2424190500FB4AA4 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060DA2424190500FB4AA4 /* PaymentView.swift */; };
-		224060EA24241B6C00FB4AA4 /* extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060E924241B6C00FB4AA4 /* extension-UIView.swift */; };
-		224060EF24241BA900FB4AA4 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060EC24241BA900FB4AA4 /* Style.swift */; };
-		224060F024241BA900FB4AA4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060ED24241BA900FB4AA4 /* Color.swift */; };
-		224060F124241BA900FB4AA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060EE24241BA900FB4AA4 /* Constants.swift */; };
-		224060F424241BC700FB4AA4 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060F324241BC700FB4AA4 /* HalfSheetPresentationControllerHeightProtocol.swift */; };
-		224060F724241BDE00FB4AA4 /* ChargeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060F624241BDE00FB4AA4 /* ChargeApi.swift */; };
-		224060F8242421BD00FB4AA4 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060E524241B0E00FB4AA4 /* ExampleViewController.swift */; };
 		224060F92424228E00FB4AA4 /* OrderNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060E624241B2500FB4AA4 /* OrderNavigationController.swift */; };
 		224060FA2424229000FB4AA4 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060E724241B3100FB4AA4 /* OrderViewController.swift */; };
 		225E1F3D2401A9730063F1D7 /* CreateMetrocardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E1F3C2401A9730063F1D7 /* CreateMetrocardController.swift */; };
@@ -50,22 +50,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2208916B2426C07900C359F3 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = "/Users/salman/Desktop/Github Repos/MeTA/MeTA/MeTA/Controllers/ExampleViewController.swift"; sourceTree = "<absolute>"; };
+		2208916D2426C1EA00C359F3 /* extension-UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension-UIView.swift"; sourceTree = "<group>"; };
+		2208916F2426C29100C359F3 /* ChargeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeApi.swift; sourceTree = "<group>"; };
+		220891712426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetPresentationControllerHeightProtocol.swift; sourceTree = "<group>"; };
+		220891732426C2F100C359F3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		220891752426C2FC00C359F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		220891772426C30C00C359F3 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		220891792426C37F00C359F3 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleView.swift; path = "/Users/salman/Desktop/Github Repos/MeTA/MeTA/MeTA/Views/Generators/ExampleView.swift"; sourceTree = "<absolute>"; };
+		2208917B2426C45200C359F3 /* HairlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
+		2208917D2426C49300C359F3 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		224060C32424177E00FB4AA4 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
-		224060D3242418D100FB4AA4 /* HairlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HairlineView.swift; path = "../../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Views/Generators/HairlineView.swift"; sourceTree = "<group>"; };
 		224060D5242418DC00FB4AA4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		224060D7242418E200FB4AA4 /* TableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
-		224060D92424190500FB4AA4 /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderView.swift; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Views/OrderView.swift"; sourceTree = "<group>"; };
-		224060DA2424190500FB4AA4 /* PaymentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentView.swift; path = "../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Views/PaymentView.swift"; sourceTree = SOURCE_ROOT; };
 		224060E32424193800FB4AA4 /* mCommExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = mCommExample.entitlements; path = "../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/mCommExample.entitlements"; sourceTree = "<group>"; };
-		224060E524241B0E00FB4AA4 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		224060E624241B2500FB4AA4 /* OrderNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNavigationController.swift; sourceTree = "<group>"; };
 		224060E724241B3100FB4AA4 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
-		224060E924241B6C00FB4AA4 /* extension-UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "extension-UIView.swift"; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/extensions/extension-UIView.swift"; sourceTree = "<group>"; };
-		224060EC24241BA900FB4AA4 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Style.swift; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Constants/Style.swift"; sourceTree = "<group>"; };
-		224060ED24241BA900FB4AA4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Constants/Color.swift"; sourceTree = "<group>"; };
-		224060EE24241BA900FB4AA4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Constants/Constants.swift"; sourceTree = "<group>"; };
-		224060F324241BC700FB4AA4 /* HalfSheetPresentationControllerHeightProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HalfSheetPresentationControllerHeightProtocol.swift; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Animations/HalfSheetPresentationControllerHeightProtocol.swift"; sourceTree = "<group>"; };
-		224060F624241BDE00FB4AA4 /* ChargeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChargeApi.swift; path = "../../../../../in-app-payments-ios-quickstart/InAppPaymentsSample/Network/ChargeApi.swift"; sourceTree = "<group>"; };
 		225E1F3C2401A9730063F1D7 /* CreateMetrocardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMetrocardController.swift; sourceTree = "<group>"; };
 		227314BC23FF6EBF001C6209 /* HomepageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageController.swift; sourceTree = "<group>"; };
 		227314BE23FFA5B9001C6209 /* TrainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCell.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 			children = (
 				224060D7242418E200FB4AA4 /* TableRowView.swift */,
 				224060D5242418DC00FB4AA4 /* HeaderView.swift */,
-				224060D3242418D100FB4AA4 /* HairlineView.swift */,
 				224060C32424177E00FB4AA4 /* ActionButton.swift */,
+				2208917B2426C45200C359F3 /* HairlineView.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 		224060E824241B5600FB4AA4 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				224060E924241B6C00FB4AA4 /* extension-UIView.swift */,
+				2208916D2426C1EA00C359F3 /* extension-UIView.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 		224060EB24241B9900FB4AA4 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				224060ED24241BA900FB4AA4 /* Color.swift */,
-				224060EE24241BA900FB4AA4 /* Constants.swift */,
-				224060EC24241BA900FB4AA4 /* Style.swift */,
+				220891732426C2F100C359F3 /* Color.swift */,
+				220891752426C2FC00C359F3 /* Constants.swift */,
+				220891772426C30C00C359F3 /* Style.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 		224060F224241BBE00FB4AA4 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				224060F324241BC700FB4AA4 /* HalfSheetPresentationControllerHeightProtocol.swift */,
+				220891712426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 		224060F524241BD500FB4AA4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				224060F624241BDE00FB4AA4 /* ChargeApi.swift */,
+				2208916F2426C29100C359F3 /* ChargeApi.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -160,7 +160,7 @@
 				F578A4F8240892F70070B42E /* CoreMLController.swift */,
 				224060E724241B3100FB4AA4 /* OrderViewController.swift */,
 				224060E624241B2500FB4AA4 /* OrderNavigationController.swift */,
-				224060E524241B0E00FB4AA4 /* ExampleViewController.swift */,
+				2208916B2426C07900C359F3 /* ExampleViewController.swift */,
 				225E1F3C2401A9730063F1D7 /* CreateMetrocardController.swift */,
 				F53F89502409770A00672B94 /* OMNYClassifier3.mlmodel */,
 				227314BC23FF6EBF001C6209 /* HomepageController.swift */,
@@ -250,8 +250,8 @@
 				224060C22424175E00FB4AA4 /* Generators */,
 				D67D8E02240B23E3002EB53E /* MarkerInfoView.swift */,
 				D67D8E04240B2488002EB53E /* UIViewExtension.swift */,
-				224060DA2424190500FB4AA4 /* PaymentView.swift */,
-				224060D92424190500FB4AA4 /* OrderView.swift */,
+				220891792426C37F00C359F3 /* ExampleView.swift */,
+				2208917D2426C49300C359F3 /* OrderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -409,38 +409,38 @@
 			files = (
 				22BC91BF24039C1F000C5551 /* RefillController.swift in Sources */,
 				D67D8E03240B23E3002EB53E /* MarkerInfoView.swift in Sources */,
+				2208916E2426C1EA00C359F3 /* extension-UIView.swift in Sources */,
 				227314C123FFA6A3001C6209 /* Train.swift in Sources */,
 				227314BF23FFA5B9001C6209 /* TrainCell.swift in Sources */,
-				224060F8242421BD00FB4AA4 /* ExampleViewController.swift in Sources */,
+				2208916C2426C07900C359F3 /* ExampleViewController.swift in Sources */,
+				220891782426C30C00C359F3 /* Style.swift in Sources */,
 				224060C42424177E00FB4AA4 /* ActionButton.swift in Sources */,
+				2208917C2426C45300C359F3 /* HairlineView.swift in Sources */,
 				F578A4F9240892F70070B42E /* CoreMLController.swift in Sources */,
 				D63D5C412409AE6B0087C399 /* MapViewController.swift in Sources */,
-				224060F124241BA900FB4AA4 /* Constants.swift in Sources */,
-				224060EA24241B6C00FB4AA4 /* extension-UIView.swift in Sources */,
 				F53F89512409770A00672B94 /* OMNYClassifier3.mlmodel in Sources */,
-				224060D4242418D100FB4AA4 /* HairlineView.swift in Sources */,
+				2208917A2426C37F00C359F3 /* ExampleView.swift in Sources */,
 				225E1F3D2401A9730063F1D7 /* CreateMetrocardController.swift in Sources */,
-				224060F424241BC700FB4AA4 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */,
 				22AEE08E2410957400F12018 /* User.swift in Sources */,
+				220891762426C2FC00C359F3 /* Constants.swift in Sources */,
 				D616EB1E240AE99900D7E971 /* GoogleDataProvider.swift in Sources */,
 				D67D8DFD240B1FB0002EB53E /* TypesTableViewController.swift in Sources */,
+				220891742426C2F100C359F3 /* Color.swift in Sources */,
+				220891722426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */,
 				22AEE0942410992B00F12018 /* LoginController.swift in Sources */,
 				22AEE0902410958A00F12018 /* Metrocard.swift in Sources */,
 				227314BD23FF6EBF001C6209 /* HomepageController.swift in Sources */,
+				2208917E2426C49300C359F3 /* OrderView.swift in Sources */,
 				22AEE08A2410952500F12018 /* SignUpController.swift in Sources */,
 				22AEE08C2410954D00F12018 /* NavigationController.swift in Sources */,
+				220891702426C29100C359F3 /* ChargeApi.swift in Sources */,
 				224060F92424228E00FB4AA4 /* OrderNavigationController.swift in Sources */,
-				224060F024241BA900FB4AA4 /* Color.swift in Sources */,
-				224060EF24241BA900FB4AA4 /* Style.swift in Sources */,
 				224060D8242418E200FB4AA4 /* TableRowView.swift in Sources */,
-				224060DC2424190500FB4AA4 /* PaymentView.swift in Sources */,
 				D67D8E05240B2488002EB53E /* UIViewExtension.swift in Sources */,
 				22EC0A6323FF628900B022A2 /* AppDelegate.swift in Sources */,
 				22EC0A6523FF628900B022A2 /* SceneDelegate.swift in Sources */,
 				D616EB20240AE9AC00D7E971 /* GooglePlace.swift in Sources */,
 				D67D8DFB240B1E47002EB53E /* PlaceMarker.swift in Sources */,
-				224060F724241BDE00FB4AA4 /* ChargeApi.swift in Sources */,
-				224060DB2424190500FB4AA4 /* OrderView.swift in Sources */,
 				224060FA2424229000FB4AA4 /* OrderViewController.swift in Sources */,
 				22BC91C12404330F000C5551 /* MetrocardController.swift in Sources */,
 				224060D6242418DD00FB4AA4 /* HeaderView.swift in Sources */,

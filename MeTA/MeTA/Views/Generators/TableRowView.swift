@@ -20,13 +20,11 @@ class TableRowView : UIStackView {
     var heading: String?
     var title: String?
     var subtitle: String?
-    var balance: String?
 
-    init(heading: String?, title: String?, subtitle: String?, balance: String?) {
+    init(heading: String?, title: String?, subtitle: String?) {
         self.heading = heading
         self.title = title
         self.subtitle = subtitle
-        self.balance = balance
 
         super.init(frame: .zero)
 
@@ -64,9 +62,9 @@ class TableRowView : UIStackView {
             bodyStackView.addArrangedSubview(makeTitleLabel(text: title))
         }
         
-        if let balance = balance {
-            bodyStackView.addArrangedSubview(makeBalanceLabel(text: balance))
-        }
+//        if let balance = balance {
+//            bodyStackView.addArrangedSubview(makeBalanceLabel(text: balance))
+//        }
         
         if let subtitle = subtitle {
             bodyStackView.addArrangedSubview(makeSubtitleLabel(text: subtitle))

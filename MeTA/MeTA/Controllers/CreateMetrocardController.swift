@@ -95,17 +95,20 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             switch cardType {
                 case "Weekly Card":
                     UserDefaults.standard.set("Weekly Card", forKey: "cardType")
+                    UserDefaults.standard.set("33.00", forKey: "cardBalance")
                     
                     let expirDate = Calendar.current.date(byAdding: .day, value: 7, to: today)
                     newCard.expirationDate = expirDate!
                 case "Monthly Card":
                     UserDefaults.standard.set("Monthly Card", forKey: "cardType")
+                    UserDefaults.standard.set("127.00", forKey: "cardBalance")
+                    
                     let expirDate = Calendar.current.date(byAdding: .month, value: 1, to: today)
                     newCard.expirationDate = expirDate!
                 default:
                     
                     UserDefaults.standard.set("Direct Deposit", forKey: "cardType")
-                    newCard.expirationDate = today
+                    newCard.expirationDate = nil
             }
             newCard.cardType = cardType
             do {
@@ -128,6 +131,7 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
         } else if (floatValue > 0) {
             if (createMetroCard(currUser: currUser!, cardType: "Direct Deposit", amtToAdd: amountAdded.text!)) {
 //                animateIn(output: "directDeposit")
+                UserDefaults.standard.set(floatValue, forKey: "cardBalance")
                 self.performSegue(withIdentifier: "example", sender: nil)
             } else {
                 let alert = UIAlertController(title: "Error", message: "User metrocard exists already", preferredStyle: .alert)
