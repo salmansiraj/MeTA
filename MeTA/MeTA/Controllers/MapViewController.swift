@@ -61,6 +61,11 @@ class MapViewController: UIViewController {
       }
     }
     
+    @IBAction func refreshPlaces(_ sender: Any) {
+        fetchNearbyPlaces(coordinate: mapView.camera.target)
+    }
+    
+    
 }
 
 extension MapViewController: TypesTableViewControllerDelegate {
