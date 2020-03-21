@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "transaction.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "smartphone.png",
       "scale" : "2x"
     },
     {

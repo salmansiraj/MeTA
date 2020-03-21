@@ -11,12 +11,14 @@ PODS:
   - Realm/Headers (4.3.2)
   - RealmSwift (4.3.2):
     - Realm (= 4.3.2)
+  - SquareInAppPaymentsSDK (1.2.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - RealmSwift
+  - SquareInAppPaymentsSDK (= 1.2.0)
   - SwiftyJSON
 
 SPEC REPOS:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - GooglePlaces
     - Realm
     - RealmSwift
+    - SquareInAppPaymentsSDK
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -32,8 +35,13 @@ SPEC CHECKSUMS:
   GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
   Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
   RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
+  SquareInAppPaymentsSDK: 4cd8143cfb21f2050cc6252596a1b8c910ad2fb9
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: 228d7b82037a464d8fd848a507ee4412436a2fd4
+=======
+PODFILE CHECKSUM: f4d3e5054a20b51239fda273950a0eef55dbba49
+>>>>>>> master
 
 COCOAPODS: 1.8.4

@@ -29,7 +29,7 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var coverBackground: UIImageView!
     @IBOutlet weak var coverBackground2: UIImageView!
     @IBOutlet weak var tryAgainButton: UIButton!
-    
+    @IBOutlet weak var connectCardButton: UIButton!
     
     let metroCardTypes = [
         "Direct Deposit",
@@ -94,12 +94,17 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             let today = Date()
             switch cardType {
                 case "Weekly Card":
+                    UserDefaults.standard.set("Weekly Card", forKey: "cardType")
+                    
                     let expirDate = Calendar.current.date(byAdding: .day, value: 7, to: today)
                     newCard.expirationDate = expirDate!
                 case "Monthly Card":
+                    UserDefaults.standard.set("Monthly Card", forKey: "cardType")
                     let expirDate = Calendar.current.date(byAdding: .month, value: 1, to: today)
                     newCard.expirationDate = expirDate!
                 default:
+                    
+                    UserDefaults.standard.set("Direct Deposit", forKey: "cardType")
                     newCard.expirationDate = today
             }
             newCard.cardType = cardType
@@ -122,9 +127,10 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             
         } else if (floatValue > 0) {
             if (createMetroCard(currUser: currUser!, cardType: "Direct Deposit", amtToAdd: amountAdded.text!)) {
-                animateIn(output: "directDeposit")
+//                animateIn(output: "directDeposit")
+                self.performSegue(withIdentifier: "example", sender: nil)
             } else {
-                let alert = UIAlertController(title: "Error?", message: "User metrocard exists already", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "User metrocard exists already", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
                 self.present(alert, animated: true)
             }
@@ -167,7 +173,10 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             
         } else if (selectedValue == "Monthly Card") {
             if (createMetroCard(currUser: currUser!, cardType: "Monthly Card", amtToAdd: "inf")) {
-                    animateIn(output: "unlimitedDeposit")
+//                    animateIn(output: "unlimitedDeposit")
+                connectCardButton.isHidden = false
+                continueButton.isHidden = true
+//                self.performSegue(withIdentifier: "example", sender: nil)
             } else {
                 let alert = UIAlertController(title: "Error?", message: "User metrocard exists already", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
@@ -175,13 +184,20 @@ class CreateMetrocardController: UIViewController, UIPickerViewDelegate, UIPicke
             }
         } else {
             if (createMetroCard(currUser: currUser!, cardType: "Weekly Card", amtToAdd: "inf")) {
-                    animateIn(output: "unlimitedDeposit")
+                connectCardButton.isHidden = false
+                continueButton.isHidden = true
+//                self.performSegue(withIdentifier: "example", sender: nil)
+//                    animateIn(output: "unlimitedDeposit")
             } else {
                 let alert = UIAlertController(title: "Error?", message: "User metrocard exists already", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
                 self.present(alert, animated: true)
             }
         }
+    }
+    
+    @IBAction func connectCardPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "example", sender: nil)
     }
     
     @IBAction func tryAgainPressed(_ sender: Any) {
