@@ -14,22 +14,18 @@ import SwiftyJSON
 typealias PlacesCompletion = ([GooglePlace]) -> Void
 typealias PhotoCompletion = (UIImage?) -> Void
 
-let placesKey = "AIzaSyCSNYOPjR1mFKD7UXHIC5-2EWOy6zN-3vQ"
-
 class GoogleDataProvider {
   private var photoCache: [String: UIImage] = [:]
   private var placesTask: URLSessionDataTask?
   private var session: URLSession {
     return URLSession.shared
   }
-    
+
   func fetchPlacesNearCoordinate(_ coordinate: CLLocationCoordinate2D, radius: Double, types: [String], completion: @escaping PlacesCompletion) -> Void {
-    var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&key=\(placesKey)"
-    let typesString = types.count > 0 ? types.joined(separator: "|") : "establishment"
+    var urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&rankby=prominence&sensor=true&key=\(googleApiKey)"
+    let typesString = types.count > 0 ? types.joined(separator: "|") : "food"
     urlString += "&types=\(typesString)"
     urlString = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? urlString
-    
-    print("here", urlString)
     
     guard let url = URL(string: urlString) else {
       completion([])
@@ -57,13 +53,7 @@ class GoogleDataProvider {
         let results = json["results"].arrayObject as? [[String: Any]] else {
           return
       }
-        
-//        UNCOMMENT THESE LINES TO SEE THE JSON OR COPY AND PASTE THE API CALL
-//        PRINTED IN THE CONSOLE AND PASTE THAT INTO YOUR BROWSER AND YOU CAN
-//        GET THE JSON
-//        print("return array")
-//        print(results)
-        
+        print(results)
       results.forEach {
         let place = GooglePlace(dictionary: $0, acceptedTypes: types)
         placesArray.append(place)
@@ -82,7 +72,7 @@ class GoogleDataProvider {
     if let photo = photoCache[reference] {
       completion(photo)
     } else {
-      let urlString = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference=\(reference)&key=\(placesKey)"
+      let urlString = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference=\(reference)&key=\(googleApiKey)"
       guard let url = URL(string: urlString) else {
         completion(nil)
         return

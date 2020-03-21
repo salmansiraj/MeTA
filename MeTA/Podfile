@@ -5,7 +5,7 @@ target 'MeTA' do
   use_modular_headers!
 
   # Pods for MeTA
-  pod 'GoogleMaps'
+	pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'SwiftyJSON'
   pod 'RealmSwift'
