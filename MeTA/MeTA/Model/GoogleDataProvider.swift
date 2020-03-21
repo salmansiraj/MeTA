@@ -29,7 +29,7 @@ class GoogleDataProvider {
     urlString += "&types=\(typesString)"
     urlString = urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? urlString
     
-    print("here", urlString)
+    print("urlgString here", urlString)
     
     guard let url = URL(string: urlString) else {
       completion([])
