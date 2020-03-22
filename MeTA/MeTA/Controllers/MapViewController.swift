@@ -16,7 +16,7 @@ class MapViewController: UIViewController {
     @IBOutlet private weak var mapCenterPinImage: UIImageView!
     @IBOutlet private weak var pinImageVerticalConstraint: NSLayoutConstraint!
     private let locationManager = CLLocationManager()
-    private var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
+    private var searchedTypes = ["subway_station", "train_station", "transit_station", "point_of_interest", "establishment"]
     private let dataProvider = GoogleDataProvider()
     private let searchRadius: Double = 1000
   
@@ -49,29 +49,30 @@ class MapViewController: UIViewController {
 //        }
       }
     }
-//
-//    private func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
-//      // 1
-//      mapView.clear()
-//      // 2
-//      dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
-//        places.forEach {
-//          // 3
-//          let marker = PlaceMarker(place: $0)
-//          // 4
-//          marker.map = self.mapView
-//        }
-//      }
-//    }
+
+    private func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
+      mapView.clear()
+      dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
+        places.forEach {
+          let marker = PlaceMarker(place: $0)
+          marker.map = self.mapView
+        }
+      }
+    }
+    
+    @IBAction func refreshPlaces(_ sender: Any) {
+        fetchNearbyPlaces(coordinate: mapView.camera.target)
+    }
+    
 }
 
-//extension MapViewController: TypesTableViewControllerDelegate {
-//  func typesController(_ controller: TypesTableViewController, didSelectTypes types: [String]) {
-//    searchedTypes = controller.selectedTypes.sorted()
-//    dismiss(animated: true)
-//    fetchNearbyPlaces(coordinate: mapView.camera.target)
-//  }
-//}
+extension MapViewController: TypesTableViewControllerDelegate {
+  func typesController(_ controller: TypesTableViewController, didSelectTypes types: [String]) {
+    searchedTypes = controller.selectedTypes.sorted()
+    dismiss(animated: true)
+    fetchNearbyPlaces(coordinate: mapView.camera.target)
+  }
+}
 
 extension MapViewController: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -91,7 +92,7 @@ extension MapViewController: CLLocationManagerDelegate {
 
     mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
     locationManager.stopUpdatingLocation()
-//    fetchNearbyPlaces(coordinate: location.coordinate)
+    fetchNearbyPlaces(coordinate: location.coordinate)
   }
 }
 

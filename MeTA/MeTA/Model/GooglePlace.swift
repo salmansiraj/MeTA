@@ -30,8 +30,8 @@ class GooglePlace {
 
         photoReference = json["photos"][0]["photo_reference"].string
 
-        var foundType = "restaurant"
-        let possibleTypes = acceptedTypes.count > 0 ? acceptedTypes : ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
+        var foundType = "establishment"
+        let possibleTypes = acceptedTypes.count > 0 ? acceptedTypes : ["subway_station", "train_station", "transit_station", "point_of_interest", "establishment"]
 
         if let types = json["types"].arrayObject as? [String] {
           for type in types {
