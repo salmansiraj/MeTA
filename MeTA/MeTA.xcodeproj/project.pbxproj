@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2208916C2426C07900C359F3 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208916B2426C07900C359F3 /* ExampleViewController.swift */; };
 		2208916E2426C1EA00C359F3 /* extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208916D2426C1EA00C359F3 /* extension-UIView.swift */; };
 		220891702426C29100C359F3 /* ChargeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208916F2426C29100C359F3 /* ChargeApi.swift */; };
 		220891722426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891712426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift */; };
 		220891742426C2F100C359F3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891732426C2F100C359F3 /* Color.swift */; };
 		220891762426C2FC00C359F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891752426C2FC00C359F3 /* Constants.swift */; };
 		220891782426C30C00C359F3 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891772426C30C00C359F3 /* Style.swift */; };
-		2208917A2426C37F00C359F3 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220891792426C37F00C359F3 /* ExampleView.swift */; };
 		2208917C2426C45300C359F3 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208917B2426C45200C359F3 /* HairlineView.swift */; };
 		2208917E2426C49300C359F3 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208917D2426C49300C359F3 /* OrderView.swift */; };
 		224060C42424177E00FB4AA4 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224060C32424177E00FB4AA4 /* ActionButton.swift */; };
@@ -45,19 +43,18 @@
 		D67D8DFD240B1FB0002EB53E /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D8DFC240B1FB0002EB53E /* TypesTableViewController.swift */; };
 		D67D8E03240B23E3002EB53E /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D8E02240B23E3002EB53E /* MarkerInfoView.swift */; };
 		D67D8E05240B2488002EB53E /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D8E04240B2488002EB53E /* UIViewExtension.swift */; };
+		D6FC20592426EF4700D7CC3C /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FC20582426EF4700D7CC3C /* ExampleView.swift */; };
 		F53F89512409770A00672B94 /* OMNYClassifier3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F53F89502409770A00672B94 /* OMNYClassifier3.mlmodel */; };
 		F578A4F9240892F70070B42E /* CoreMLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F578A4F8240892F70070B42E /* CoreMLController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2208916B2426C07900C359F3 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = "/Users/salman/Desktop/Github Repos/MeTA/MeTA/MeTA/Controllers/ExampleViewController.swift"; sourceTree = "<absolute>"; };
 		2208916D2426C1EA00C359F3 /* extension-UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension-UIView.swift"; sourceTree = "<group>"; };
 		2208916F2426C29100C359F3 /* ChargeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeApi.swift; sourceTree = "<group>"; };
 		220891712426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetPresentationControllerHeightProtocol.swift; sourceTree = "<group>"; };
 		220891732426C2F100C359F3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		220891752426C2FC00C359F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		220891772426C30C00C359F3 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		220891792426C37F00C359F3 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleView.swift; path = "/Users/salman/Desktop/Github Repos/MeTA/MeTA/MeTA/Views/Generators/ExampleView.swift"; sourceTree = "<absolute>"; };
 		2208917B2426C45200C359F3 /* HairlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
 		2208917D2426C49300C359F3 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		224060C32424177E00FB4AA4 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
@@ -93,6 +90,8 @@
 		D67D8DFC240B1FB0002EB53E /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		D67D8E02240B23E3002EB53E /* MarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
 		D67D8E04240B2488002EB53E /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D6FC20582426EF4700D7CC3C /* ExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleView.swift; path = MeTA/Views/ExampleView.swift; sourceTree = SOURCE_ROOT; };
+		D6FC205C2426F4F500D7CC3C /* MarkerInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MarkerInfoView.xib; path = "../../../../MobileApp/Feed_Me_Completed/Feed Me/Views/MarkerInfoView.xib"; sourceTree = "<group>"; };
 		F53F89502409770A00672B94 /* OMNYClassifier3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = OMNYClassifier3.mlmodel; sourceTree = "<group>"; };
 		F578A4F8240892F70070B42E /* CoreMLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,7 +159,6 @@
 				F578A4F8240892F70070B42E /* CoreMLController.swift */,
 				224060E724241B3100FB4AA4 /* OrderViewController.swift */,
 				224060E624241B2500FB4AA4 /* OrderNavigationController.swift */,
-				2208916B2426C07900C359F3 /* ExampleViewController.swift */,
 				225E1F3C2401A9730063F1D7 /* CreateMetrocardController.swift */,
 				F53F89502409770A00672B94 /* OMNYClassifier3.mlmodel */,
 				227314BC23FF6EBF001C6209 /* HomepageController.swift */,
@@ -247,10 +245,11 @@
 		D67D8DFF240B23C3002EB53E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D6FC205C2426F4F500D7CC3C /* MarkerInfoView.xib */,
 				224060C22424175E00FB4AA4 /* Generators */,
 				D67D8E02240B23E3002EB53E /* MarkerInfoView.swift */,
 				D67D8E04240B2488002EB53E /* UIViewExtension.swift */,
-				220891792426C37F00C359F3 /* ExampleView.swift */,
+				D6FC20582426EF4700D7CC3C /* ExampleView.swift */,
 				2208917D2426C49300C359F3 /* OrderView.swift */,
 			);
 			path = Views;
@@ -268,8 +267,8 @@
 				22EC0A5C23FF628900B022A2 /* Frameworks */,
 				22EC0A5D23FF628900B022A2 /* Resources */,
 				2276429A241CC0010032086C /* ShellScript */,
-				6EDAE26CBF698B8C729E62E6 /* [CP] Copy Pods Resources */,
 				339EDFF05175A52414CBF46E /* [CP] Embed Pods Frameworks */,
+				566595FD141017C4A5E5DBDB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,9 +360,9 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeTA/Pods-MeTA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EDAE26CBF698B8C729E62E6 /* [CP] Copy Pods Resources */ = {
+		566595FD141017C4A5E5DBDB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
@@ -412,14 +411,12 @@
 				2208916E2426C1EA00C359F3 /* extension-UIView.swift in Sources */,
 				227314C123FFA6A3001C6209 /* Train.swift in Sources */,
 				227314BF23FFA5B9001C6209 /* TrainCell.swift in Sources */,
-				2208916C2426C07900C359F3 /* ExampleViewController.swift in Sources */,
 				220891782426C30C00C359F3 /* Style.swift in Sources */,
 				224060C42424177E00FB4AA4 /* ActionButton.swift in Sources */,
 				2208917C2426C45300C359F3 /* HairlineView.swift in Sources */,
 				F578A4F9240892F70070B42E /* CoreMLController.swift in Sources */,
 				D63D5C412409AE6B0087C399 /* MapViewController.swift in Sources */,
 				F53F89512409770A00672B94 /* OMNYClassifier3.mlmodel in Sources */,
-				2208917A2426C37F00C359F3 /* ExampleView.swift in Sources */,
 				225E1F3D2401A9730063F1D7 /* CreateMetrocardController.swift in Sources */,
 				22AEE08E2410957400F12018 /* User.swift in Sources */,
 				220891762426C2FC00C359F3 /* Constants.swift in Sources */,
@@ -438,6 +435,7 @@
 				224060D8242418E200FB4AA4 /* TableRowView.swift in Sources */,
 				D67D8E05240B2488002EB53E /* UIViewExtension.swift in Sources */,
 				22EC0A6323FF628900B022A2 /* AppDelegate.swift in Sources */,
+				D6FC20592426EF4700D7CC3C /* ExampleView.swift in Sources */,
 				22EC0A6523FF628900B022A2 /* SceneDelegate.swift in Sources */,
 				D616EB20240AE9AC00D7E971 /* GooglePlace.swift in Sources */,
 				D67D8DFB240B1E47002EB53E /* PlaceMarker.swift in Sources */,
