@@ -51,7 +51,7 @@ class MetrocardController: UIViewController {
             else {
                 currBalance.text = "$ " + String(format: "%.2f", cardDB[0].balance)
                 expirDate!.text = "N/A"
-                
+                cardType.text = "Deposit"
             }
         }
         // Do any additional setup after loading the view.

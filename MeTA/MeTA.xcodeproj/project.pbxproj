@@ -24,6 +24,7 @@
 		227314BD23FF6EBF001C6209 /* HomepageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227314BC23FF6EBF001C6209 /* HomepageController.swift */; };
 		227314BF23FFA5B9001C6209 /* TrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227314BE23FFA5B9001C6209 /* TrainCell.swift */; };
 		227314C123FFA6A3001C6209 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227314C023FFA6A3001C6209 /* Train.swift */; };
+		2294778F244FF27C0085014C /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2294778E244FF27B0085014C /* ExampleViewController.swift */; };
 		22AEE08A2410952500F12018 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE0892410952500F12018 /* SignUpController.swift */; };
 		22AEE08C2410954D00F12018 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE08B2410954D00F12018 /* NavigationController.swift */; };
 		22AEE08E2410957400F12018 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AEE08D2410957400F12018 /* User.swift */; };
@@ -67,6 +68,7 @@
 		227314BC23FF6EBF001C6209 /* HomepageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageController.swift; sourceTree = "<group>"; };
 		227314BE23FFA5B9001C6209 /* TrainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCell.swift; sourceTree = "<group>"; };
 		227314C023FFA6A3001C6209 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		2294778E244FF27B0085014C /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		22AEE0892410952500F12018 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		22AEE08B2410954D00F12018 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		22AEE08D2410957400F12018 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				22AEE0892410952500F12018 /* SignUpController.swift */,
 				22AEE08B2410954D00F12018 /* NavigationController.swift */,
 				22AEE0932410992B00F12018 /* LoginController.swift */,
+				2294778E244FF27B0085014C /* ExampleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				D67D8DFD240B1FB0002EB53E /* TypesTableViewController.swift in Sources */,
 				220891742426C2F100C359F3 /* Color.swift in Sources */,
 				220891722426C2C900C359F3 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */,
+				2294778F244FF27C0085014C /* ExampleViewController.swift in Sources */,
 				22AEE0942410992B00F12018 /* LoginController.swift in Sources */,
 				22AEE0902410958A00F12018 /* Metrocard.swift in Sources */,
 				227314BD23FF6EBF001C6209 /* HomepageController.swift in Sources */,
