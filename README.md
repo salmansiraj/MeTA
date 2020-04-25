@@ -1,4 +1,4 @@
-# MeTA
+<img width="204" alt="logo" src="https://user-images.githubusercontent.com/34731628/80273755-029f3180-86a3-11ea-8643-edeacb6f27ef.png">
 
 ## Purpose
 Creating a mobile application that serves as an integrated platform for MTA customers to keep track of and refill/renew their Metrocard balance and provide nearby transportation routes
