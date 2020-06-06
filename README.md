@@ -16,5 +16,5 @@ Creating a mobile application that serves as an integrated platform for MTA cust
 
 ## Future Work 
 - Creating backend server + REST API endpoints for frontend <-> backend communication
-- Deploy server app to Heroku
+- Deploy backend server app to Heroku
 - Integrate Facebook Auth
